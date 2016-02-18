@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+  	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSSwitchCell</string>
+		<key>default</key>
+		<true/>
+		<key>defaults</key>
+		<string>com.cabralcole.appswitcher7</string>
+		<key>icon</key>
+		<string>AppSwitcher7.png</string>
+		<key>key</key>
+		<string>AppSwitcherEnabled</string>
+		<key>label</key>
+		<string>AppSwitcher7</string>
+		<key>PostNotification</key>
+		<string>com.cabralcole.appswitcher7.prefs</string>
+	</dict>
+  </dict>
+</plist>

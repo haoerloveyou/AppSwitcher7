@@ -1,0 +1,10 @@
+Package: com.cabralcole.appswitcher7
+Name: AppSwitcher7
+Pre-Depends: firmware (>= 9.0)
+Depends: mobilesubstrate, preferenceloader
+Version: 1.0
+Architecture: iphoneos-arm
+Description: iOS 7 style App Switcher.
+Maintainer: cabralcole
+Author: cabralcole
+Section: Tweaks
