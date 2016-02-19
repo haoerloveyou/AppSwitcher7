@@ -5,11 +5,6 @@ static BOOL tweakEnabled;
 
 %hook SBAppSwitcherSettings
 
-- (void)setDefaultValues
-{
-	%orig;
-}
-
 - (void)setSwitcherStyle:(NSInteger)arg1
 {
 	if (tweakEnabled) {
