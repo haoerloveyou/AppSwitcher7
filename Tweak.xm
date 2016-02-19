@@ -5,10 +5,15 @@ static BOOL tweakEnabled;
 
 %hook SBAppSwitcherSettings
 
+- (void)setDefaultValues
+{
+	%orig;
+}
+
 - (void)setSwitcherStyle:(NSInteger)arg1
 {
 	if (tweakEnabled) {
-		%orig(arg1 = 0); // iOS 7/8 style
+		%orig(0); // iOS 7/8 style
 	}
 	%orig;
 }
