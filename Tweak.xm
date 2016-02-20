@@ -1,6 +1,7 @@
 NSString *const PREF_PATH = @"/var/mobile/Library/Preferences/com.cabralcole.appswitcher7.plist";
 CFStringRef const PreferencesNotification = CFSTR("com.cabralcole.appswitcher7.prefs");
 
+
 static BOOL tweakEnabled;
 
 %hook SBAppSwitcherSettings
@@ -8,7 +9,7 @@ static BOOL tweakEnabled;
 - (void)setSwitcherStyle:(NSInteger)arg1
 {
 	if (tweakEnabled) {
-		%orig(0); // iOS 7/8 style
+		arg1 = 0; // iOS 7/8 style
 	}
 	%orig;
 }
